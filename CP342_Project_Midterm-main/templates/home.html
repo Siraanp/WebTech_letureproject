@@ -1,0 +1,200 @@
+{% extends 'base_layout.html' %}
+
+{% block body %}
+   
+      <div class="touch">
+        <div class="card text-left">
+          <div class="card-body">
+              <div class ="head">
+            <h3 class="text-center"> HOT DEALS!!! </h3>
+            </div>
+            <div class="row">
+              {% for i in game %}
+              <div class="col-md-4 mt-2">
+                <div class="card">
+                  <img class="card-img-top" src="{{i.thumb}}" alt="Card image cap" width = auto height="300">
+                  <div class="card-body">
+                    <h6>{{i.title}}</h6>
+                        <p class="card-text text">
+                            {% if i.storeID == "1" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  Steam") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "2" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  GamersGate") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "3" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  GreenManGaming") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "4" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  Amazon") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "5" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  GameStop") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "6" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  Direct2Drive") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "7" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  GoG") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "8" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  Origin") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "9" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  Get Games") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "10" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  Shiny Loot") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "11" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  Humble Store") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "12" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  Desura") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "13" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  Uplay") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "14" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  IndieGameStand") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "15" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  Fanatical") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "16" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  Gamesrocket") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "17" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  Games Republic") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "18" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  SilaGames") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "19" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  Playfield") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "20" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  ImperialGames") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "21" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  WinGameStore") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "22" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  FunStockDigital") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "23" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  GameBillet") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "24" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  Voidu") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "25" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  Epic game store") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "26" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  Razer Game Store") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "27" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  Gamesplanet") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "28" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  Gamesload") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "29" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  2Game") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "30" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  IndieGala") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "31" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  Blizzard") %}
+                            </p>
+                            {% endif %}
+                            {% if i.storeID == "32" %}
+                            <p class="card-text text">
+                            {% print("ร้านค้า :  AllYouPlay") %}
+                            </p>
+                            {% endif %}
+                            
+                        </p>
+                      <p class="card-text text">ราคาเต็ม : {{i.normalPrice }} $</p>
+                      <p class="card-text text">ลดเหลือ : {{i.salePrice }} $</p>
+                      <p class="card-text text">ลด {{i.savings }}%</p>
+                      <a href="https://www.cheapshark.com/redirect?dealID={{i.dealID }}"class="text-left btn btn-outline-primary btn-lg" target="_blank">To store</a>
+                      
+                      <br>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+{% endblock %}

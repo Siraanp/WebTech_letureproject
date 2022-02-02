@@ -1,0 +1,46 @@
+{% extends 'base_layout.html' %}
+
+{% block body %}
+
+      <div class="touch">
+        <div class="card">
+          <br>
+          <h5 class="text-center">ค้นหาเกมของคุณ :</h5>
+          <div class="col-sm">
+            <div class="form-outline">
+              <form>
+                <input type="text" name="word" class="form-control" />
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+              <br>
+            </div>
+          </div>
+          </div>
+        </div>
+      
+    
+      <div class="touch">
+        <div class="card text-left">
+          <div class="card-body">
+            <div class="row">
+              {% for i in findGame %}
+              <div class="col-md-4 mt-2">
+
+                <div class="card">
+                    <img class="card-img-top" src="{{i.thumb}}" alt="Card image cap" width = auto height="300">
+                  <div class="card-body">
+                    <h5>{{i.external}}</h4>
+                    <hr>ราคาที่ถูกที่สุดในขณะนี้ :{{i.cheapest}} $</h5>
+                        <a href="https://www.cheapshark.com/redirect?dealID={{i.cheapestDealID }}"class="text-left btn btn-outline-primary btn-lg" target="_blank">To Deals</a>
+                        <a href="https://store.steampowered.com/app/{{i.steamAppID}}"class="text-left btn btn-outline-primary btn-lg" target="_blank">more info</a>
+                  </div>
+                </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends 'base_layout.html' %}
+
+{% block body %}
+
+<body>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: left;
+            padding: 8px;
+            background-color: white;
+        }
+
+       </style>
+       <table>
+        <thead>
+            <tr>
+                <th>Picture</th>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+
+        {% for i in Dev_info %}
+            <tr>
+                <td><img src="{{i.dev_pic}}" alt="{{i.dev_id}}" width="150" height="200">
+                <td>{{i.dev_id}}</td>
+                <td>{{i.dev_name}}</td>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+ 
+{% endblock %}
+
